@@ -1,4 +1,4 @@
-const APICALL = 'http://api.quotable.io/random?tags=history|technology';
+const APICALL = 'https://api.quotable.io/random?tags=history|technology';
 
 const tempsAffichage = document.querySelector('.temps');
 const scoreAffichage = document.querySelector('.score');
@@ -20,7 +20,7 @@ function time(){
     tempsAffichage.innerText = `Temps : ${temps}`;
     scoreAffichage.innerText = `Score : ${score}`;
     if(temps === 0){
-        clearInterval(timer);
+        clearInterval(timer)
     }
 }
 
